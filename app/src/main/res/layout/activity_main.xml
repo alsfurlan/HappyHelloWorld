@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/helloWorldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world_text_view"
+        android:textSize="@dimen/text_size_all_components"
+        android:layout_marginTop="@dimen/margin_all_components"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helloWorldTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_all_components"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/sayHelloButton"
+        android:layout_marginTop="@dimen/margin_all_components"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="@string/say_hello_button"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_all_components"
+        />
+
+    <TextView
+        android:id="@+id/helloPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sayHelloButton"
+        android:layout_marginTop="@dimen/margin_all_components"
+        android:layout_centerHorizontal="true"
+        android:text="@string/helloPhrase"
+        android:textSize="@dimen/text_size_all_components"/>
+
+    <ImageView
+        android:id="@+id/happyFace"
+        android:layout_below="@+id/helloPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_all_components"
+        android:src="@drawable/happyface"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
